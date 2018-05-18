@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Static HTML file</title>
+</head>
+<body>
+
+<h2>Static HTML file</h2>
+
+<div>This form does not have a token... it won't work</div>
+<form action="/vote" method="post">
+  <input type="submit" value="Vote">
+</form>
+<hr>
+
+<div id="token">No token requested yet...</div>
+<button onclick="getToken()">Request token</button>
+<hr>
+
+<div id="response">No POST response yet...</div>
+<button onclick="useToken()">Use token to POST</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>
